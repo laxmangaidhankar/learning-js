@@ -47,7 +47,7 @@ console.log(student.studAge);
 
 
 //Operators is js
-
+/*
 let num1=10;
 let num2=20;
 
@@ -68,5 +68,16 @@ console.log(`Increment = ${num1++}`);
 console.log(`Decrement = ${num1--}`);
 
 
+*/
 
+//Assignment Operators
 
+let a=10;
+let b=a;
+console.log(b);
+console.log(`a+=b is ${a+=b}`);
+console.log(`a-=b is ${a-=b}`);
+console.log(`a*=b is ${a*=b}`);
+console.log(`a/=b is ${a/=b}`);
+console.log(`a%=b is ${a%=b}`);
+console.log(`a**=b is ${a**=b}`);
