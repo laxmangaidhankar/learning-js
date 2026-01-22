@@ -72,12 +72,28 @@ console.log(`Decrement = ${num1--}`);
 
 //Assignment Operators
 
-let a=10;
-let b=a;
-console.log(b);
-console.log(`a+=b is ${a+=b}`);
-console.log(`a-=b is ${a-=b}`);
-console.log(`a*=b is ${a*=b}`);
-console.log(`a/=b is ${a/=b}`);
-console.log(`a%=b is ${a%=b}`);
-console.log(`a**=b is ${a**=b}`);
+// let a=10;
+// let b=a;
+// console.log(b);
+// console.log(`a+=b is ${a+=b}`);
+// console.log(`a-=b is ${a-=b}`);
+// console.log(`a*=b is ${a*=b}`);
+// console.log(`a/=b is ${a/=b}`);
+// console.log(`a%=b is ${a%=b}`);
+// console.log(`a**=b is ${a**=b}`);
+
+
+
+//Comparision Operators in js
+
+let num1 = 10;
+let num2 = 10;
+
+console.log(`num1==num2 ${num1==num2}`);
+console.log(`num1!=num2 ${num1!=num2}`);
+console.log(`num1!==num2 ${num1!==num2}`);
+console.log(`num1===num2 ${num1===num2}`);
+console.log(`num1>num2 ${num1>num2}`);
+console.log(`num1>=num2 ${num1>=num2}`);
+console.log(`num1<num2 ${num1<num2}`);
+console.log(`num1<=num2 ${num1<=num2}`);
