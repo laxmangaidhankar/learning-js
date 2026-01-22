@@ -39,3 +39,7 @@ console.log(student);
 console.log(student["studRollNo"]);
 
 console.log(student.studAge);
+
+
+
+
