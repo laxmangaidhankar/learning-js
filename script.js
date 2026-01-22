@@ -21,3 +21,21 @@ console.log(typeof nullValue);
 
 let booleanValue=true;
 console.log(typeof booleanValue);
+
+
+console.log("Non-Premitive Data Types");
+
+const student={
+    studName:"Laxman Gaidhankar",
+    studRollNo:22501,
+    studBranch:"ENTC",
+    studAge:18,
+};
+
+
+console.log(student);
+
+
+console.log(student["studRollNo"]);
+
+console.log(student.studAge);
