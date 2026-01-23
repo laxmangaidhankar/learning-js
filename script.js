@@ -142,3 +142,21 @@ console.log(`Decrement = ${num1--}`);
 let age = 16;
 console.log(age >= 18 ? "Eligible to vote" : "Not eligible to vote");
 
+
+
+let choice="a";
+
+switch(choice){
+    case 'a':
+        console.log("a");
+        break;
+    case 'b':
+        console.log("b");
+        break;
+    case 'c':
+        console.log("c");
+        break;
+
+    default:
+        console.log("not available");
+}
