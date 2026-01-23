@@ -197,3 +197,20 @@ console.log(`Decrement = ${num1--}`);
     }while(count<=5);
     
 
+    //for-of
+
+    let str="abcd";
+    for(let newStr of str){
+        console.log(newStr);
+    }
+
+    //for-in 
+
+    const student ={
+        fullName:"abcd",
+        age:18,
+    };
+
+    for(let key in student){
+        console.log("key = ", key ,"value=",student[key]);
+    }
