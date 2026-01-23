@@ -138,25 +138,62 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-//Ternary operator 
-let age = 16;
-console.log(age >= 18 ? "Eligible to vote" : "Not eligible to vote");
+// //Ternary operator 
+// let age = 16;
+// console.log(age >= 18 ? "Eligible to vote" : "Not eligible to vote");
 
 
 
-let choice="a";
+// let choice="a";
 
-switch(choice){
-    case 'a':
-        console.log("a");
-        break;
-    case 'b':
-        console.log("b");
-        break;
-    case 'c':
-        console.log("c");
-        break;
+// switch(choice){
+//     case 'a':
+//         console.log("a");
+//         break;
+//     case 'b':
+//         console.log("b");
+//         break;
+//     case 'c':
+//         console.log("c");
+//         break;
 
-    default:
-        console.log("not available");
-}
+//     default:
+//         console.log("not available");
+// }
+
+
+
+// let num1=prompt("Enter a number");
+
+// if(num1%5==0){
+//     console.log(`  ${num1} number is divisible by 5`);
+
+// }else{
+//     console.log(`${num1} given number is not divisible by 5`);
+// }
+
+
+    //for loop 
+    let sum=0
+    for (let i=1; i<=5;i++){
+        sum=sum+i;
+    }
+    console.log(sum);
+
+    //while loop not execute if condition is false
+    let i=10;
+    while(i<=5){
+        console.log("i=", i);
+        i++;
+    }
+
+    
+
+    //do while execute atleast ones
+    let count=10;
+    do{
+        console.log(count);
+        count++;
+    }while(count<=5);
+    
+
