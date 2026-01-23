@@ -86,14 +86,22 @@ console.log(`Decrement = ${num1--}`);
 
 //Comparision Operators in js
 
-let num1 = 10;
-let num2 = 10;
+// let num1 = 10;
+// let num2 = 10;
 
-console.log(`num1==num2 ${num1==num2}`);
-console.log(`num1!=num2 ${num1!=num2}`);
-console.log(`num1!==num2 ${num1!==num2}`);
-console.log(`num1===num2 ${num1===num2}`);
-console.log(`num1>num2 ${num1>num2}`);
-console.log(`num1>=num2 ${num1>=num2}`);
-console.log(`num1<num2 ${num1<num2}`);
-console.log(`num1<=num2 ${num1<=num2}`);
+// console.log(`num1==num2 ${num1==num2}`);
+// console.log(`num1!=num2 ${num1!=num2}`);
+// console.log(`num1!==num2 ${num1!==num2}`);
+// console.log(`num1===num2 ${num1===num2}`);
+// console.log(`num1>num2 ${num1>num2}`);
+// console.log(`num1>=num2 ${num1>=num2}`);
+// console.log(`num1<num2 ${num1<num2}`);
+// console.log(`num1<=num2 ${num1<=num2}`);
+
+
+let cond1=5>10;
+let cond2=50>10;
+
+console.log(`Logical AND ${cond1} ${cond2} = ${cond1 && cond2}`);
+console.log(`Logical OR ${cond1} ${cond2} = ${cond1 || cond2}`);
+console.log(`Logical NOT ${cond1} = ${!cond1}`);
