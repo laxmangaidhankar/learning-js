@@ -99,9 +99,41 @@ console.log(`Decrement = ${num1--}`);
 // console.log(`num1<=num2 ${num1<=num2}`);
 
 
-let cond1=5>10;
-let cond2=50>10;
+// let cond1=5>10;
+// let cond2=50>10;
 
-console.log(`Logical AND ${cond1} ${cond2} = ${cond1 && cond2}`);
-console.log(`Logical OR ${cond1} ${cond2} = ${cond1 || cond2}`);
-console.log(`Logical NOT ${cond1} = ${!cond1}`);
+// console.log(`Logical AND ${cond1} ${cond2} = ${cond1 && cond2}`);
+// console.log(`Logical OR ${cond1} ${cond2} = ${cond1 || cond2}`);
+// console.log(`Logical NOT ${cond1} = ${!cond1}`);
+
+
+
+let age=25;
+console.log(`Current age = ${age}`);
+//if statement
+if(age>18){
+    console.log(`Greater than 18`);
+}
+
+//if-else statement
+age=45;
+console.log(`Current age = ${age}`);
+
+if(age>=65){
+    console.log(`Greater than 65`);
+} else{
+    console.log(`age is less than 65`);
+}
+
+
+//if-else-if statemnt
+let num1=18, num2=12, num3=8;
+if(num1>num2 && num1>num3){
+    console.log(`${num1} is greater than ${num2} and ${num3}`);
+}else if(num2>num1 && num2>num3){
+    console.log(`${num2} is greater than ${num1} and ${num3}`);
+}else{
+    console.log(`${num3} is greater than ${num1} and ${num2}`);
+}
+
+
