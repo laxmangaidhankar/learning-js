@@ -377,17 +377,35 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-let companies=["bloomberg", "microsoft", "uber", "google", "ibm", "netflix"];
-console.log(companies);
+// let companies=["bloomberg", "microsoft", "uber", "google", "ibm", "netflix"];
+// console.log(companies);
 
-companies.shift();
+// companies.shift();
 
-console.log(companies);
+// console.log(companies);
 
 
-companies.splice(1,1,"ola");
-console.log(companies);
+// companies.splice(1,1,"ola");
+// console.log(companies);
 
-companies.push("amazon");
+// companies.push("amazon");
 
-console.log(companies);
+// console.log(companies);
+
+
+
+//learning Functions
+
+//function without parameters
+function myFunction(){
+    console.log("Hello World");
+}
+myFunction();
+
+
+//function with parameters
+function sum(num1,num2){
+    let add=num1+num2;
+    console.log(add);
+}
+sum(5,5);
