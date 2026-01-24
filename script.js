@@ -397,15 +397,25 @@ console.log(`Decrement = ${num1--}`);
 //learning Functions
 
 //function without parameters
-function myFunction(){
-    console.log("Hello World");
-}
-myFunction();
+// function myFunction(){
+//     console.log("Hello World");
+// }
+// myFunction();
 
 
-//function with parameters
-function sum(num1,num2){
-    let add=num1+num2;
-    console.log(add);
+// //function with parameters
+// function sum(num1,num2){
+//     let add=num1+num2;
+//     console.log(add);
+// }
+// sum(5,5);
+
+const arrowSum= (num1, num2) =>{
+    return num1+num2;
 }
-sum(5,5);
+
+
+
+const arrowMul=(num1, num2)=>{
+    return num1*num2;
+}
