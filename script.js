@@ -174,43 +174,87 @@ console.log(`Decrement = ${num1--}`);
 
 
     //for loop 
-    let sum=0
-    for (let i=1; i<=5;i++){
-        sum=sum+i;
-    }
-    console.log(sum);
+    // let sum=0
+    // for (let i=1; i<=5;i++){
+    //     sum=sum+i;
+    // }
+    // console.log(sum);
 
-    //while loop not execute if condition is false
-    let i=10;
-    while(i<=5){
-        console.log("i=", i);
-        i++;
-    }
+    // //while loop not execute if condition is false
+    // let i=10;
+    // while(i<=5){
+    //     console.log("i=", i);
+    //     i++;
+    // }
 
     
 
-    //do while execute atleast ones
-    let count=10;
-    do{
-        console.log(count);
-        count++;
-    }while(count<=5);
+    // //do while execute atleast ones
+    // let count=10;
+    // do{
+    //     console.log(count);
+    //     count++;
+    // }while(count<=5);
     
 
-    //for-of
+    // //for-of
 
-    let str="abcd";
-    for(let newStr of str){
-        console.log(newStr);
-    }
+    // let str="abcd";
+    // for(let newStr of str){
+    //     console.log(newStr);
+    // }
 
-    //for-in 
+    // //for-in 
 
-    const student ={
-        fullName:"abcd",
-        age:18,
-    };
+    // const student ={
+    //     fullName:"abcd",
+    //     age:18,
+    // };
 
-    for(let key in student){
-        console.log("key = ", key ,"value=",student[key]);
-    }
+    // for(let key in student){
+    //     console.log("key = ", key ,"value=",student[key]);
+    // }
+
+
+
+    //print all even numbers between 1-100
+
+    
+    // for(let i=1;i<=100;i++){
+    //     if(i%2==0){
+    //         console.log(i);
+           
+    //     }
+    // }
+
+    // let theNumber=251107;
+    // let inputNumber=prompt("Enter a number");
+
+    // if(theNumber==inputNumber){
+    //     console.log("Number Matched");
+    // }else{
+    //     console.log("Number not matched");
+    // }
+
+
+
+    //String
+    let str=" Java Script";
+    console.log(str);
+    console.log(str.length);
+
+    console.log(typeof str);
+
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+    console.log(str.trim());
+    console.log(str.charAt(1)); //0= , 1=J ....
+    console.log(str.slice(1, 5));
+
+
+    str1="java";
+    str2="script";
+
+    console.log(str1.concat(str2));
+
+    console.log(str2.replace("s","S"));
