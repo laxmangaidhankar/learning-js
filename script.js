@@ -239,22 +239,56 @@ console.log(`Decrement = ${num1--}`);
 
 
     //String
-    let str=" Java Script";
-    console.log(str);
-    console.log(str.length);
+    // let str=" Java Script";
+    // console.log(str);
+    // console.log(str.length);
 
-    console.log(typeof str);
+    // console.log(typeof str);
 
-    console.log(str.toUpperCase());
-    console.log(str.toLowerCase());
-    console.log(str.trim());
-    console.log(str.charAt(1)); //0= , 1=J ....
-    console.log(str.slice(1, 5));
+    // console.log(str.toUpperCase());
+    // console.log(str.toLowerCase());
+    // console.log(str.trim());
+    // console.log(str.charAt(1)); //0= , 1=J ....
+    // console.log(str.slice(1, 5));
 
 
-    str1="java";
-    str2="script";
+    // str1="java";
+    // str2="script";
 
-    console.log(str1.concat(str2));
+    // console.log(str1.concat(str2));
 
-    console.log(str2.replace("s","S"));
+    // console.log(str2.replace("s","S"));
+
+
+    // let userInput = prompt("Enter your full name");
+    // let trimmedName = userInput.trim(); 
+    // let userName = `@${trimmedName}${trimmedName.length}`;
+
+    // console.log(userName);
+
+
+    //array in js
+
+    let marks=[23,25,67,99,100];
+    // console.log(marks);
+    // console.log(typeof marks);
+
+    // console.log(marks[0]);
+    // console.log(marks[1]);
+
+    // marks[0]=99;
+    // console.log(marks);
+
+
+    //iterating over the array
+
+    // for(let idx=0;idx<marks.length;idx++){
+    //     console.log(marks[idx]);
+    // }
+
+    //for of
+    let i;
+    for (i of marks){
+        console.log(i);
+
+    }
