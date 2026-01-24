@@ -303,24 +303,74 @@ console.log(`Decrement = ${num1--}`);
     // console.log(avg);
 
 
-    let prices=[250,645,300,900,50];
-    // let i=0
-    // for(let val of prices){
-    //     console.log(`Prices before applying offer of ${i} - ${val}`);
+//     let prices=[250,645,300,900,50];
+//     // let i=0
+//     // for(let val of prices){
+//     //     console.log(`Prices before applying offer of ${i} - ${val}`);
         
-    //     let offer=val/10;
-    //     prices[i]=prices[i]-offer;
-    //     console.log(`Prices after applying offer of ${i} - ${prices[i]}`);
-    //     i++;
+//     //     let offer=val/10;
+//     //     prices[i]=prices[i]-offer;
+//     //     console.log(`Prices after applying offer of ${i} - ${prices[i]}`);
+//     //     i++;
 
-    // }
-console.log(`Before offer ${prices}`);
-let i=0
-    for( i =0;i<prices.length;i++){
+//     // }
+// console.log(`Before offer ${prices}`);
+// let i=0
+//     for( i =0;i<prices.length;i++){
        
         
-        let offer=prices[i]/10;
-        prices[i]=prices[i]-offer;
+//         let offer=prices[i]/10;
+//         prices[i]=prices[i]-offer;
 
-    }
-            console.log(`after offer ${prices}`);
+//     }
+//             console.log(`after offer ${prices}`);
+
+
+
+// let prices=[250,645,300,900,50];
+
+// for (let i=0;i<prices.length;i++){
+//     let offer=prices[i]/10;
+//     prices[i]-=offer;
+// }
+// console.log(prices);
+
+//array methods
+
+let marks=[20,50,30,40];
+
+console.log(marks);
+
+marks.push(500);
+marks.push(800);
+
+console.log(marks);
+
+let deletedMark=marks.pop();
+console.log(`Deleted mark is ${deletedMark}`);
+console.log(marks);
+
+
+console.log(marks);
+console.log(marks.toString());
+
+
+let class1=["abc", "xyz"];
+let class2=["pqr", "olp"];
+
+class1.concat(class2);
+console.log(class1.concat(class2));
+
+
+
+class1.unshift("lbg", "ght"); //add to starting position
+console.log(class1)
+class1.shift();
+console.log(class1);
+
+
+console.log(class1.slice(1,2));
+
+class1.splice(0,3,"pqe" );
+
+console.log(class1);
