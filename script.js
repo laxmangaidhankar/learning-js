@@ -44,8 +44,6 @@ console.log(student.studAge);
 
 */
 
-
-
 //Operators is js
 /*
 let num1=10;
@@ -82,8 +80,6 @@ console.log(`Decrement = ${num1--}`);
 // console.log(`a%=b is ${a%=b}`);
 // console.log(`a**=b is ${a**=b}`);
 
-
-
 //Comparision Operators in js
 
 // let num1 = 10;
@@ -98,15 +94,12 @@ console.log(`Decrement = ${num1--}`);
 // console.log(`num1<num2 ${num1<num2}`);
 // console.log(`num1<=num2 ${num1<=num2}`);
 
-
 // let cond1=5>10;
 // let cond2=50>10;
 
 // console.log(`Logical AND ${cond1} ${cond2} = ${cond1 && cond2}`);
 // console.log(`Logical OR ${cond1} ${cond2} = ${cond1 || cond2}`);
 // console.log(`Logical NOT ${cond1} = ${!cond1}`);
-
-
 
 // let age=25;
 // console.log(`Current age = ${age}`);
@@ -125,7 +118,6 @@ console.log(`Decrement = ${num1--}`);
 //     console.log(`age is less than 65`);
 // }
 
-
 // //if-else-if statemnt
 // let num1=18, num2=12, num3=8;
 // if(num1>num2 && num1>num3){
@@ -136,13 +128,9 @@ console.log(`Decrement = ${num1--}`);
 //     console.log(`${num3} is greater than ${num1} and ${num2}`);
 // }
 
-
-
-// //Ternary operator 
+// //Ternary operator
 // let age = 16;
 // console.log(age >= 18 ? "Eligible to vote" : "Not eligible to vote");
-
-
 
 // let choice="a";
 
@@ -161,8 +149,6 @@ console.log(`Decrement = ${num1--}`);
 //         console.log("not available");
 // }
 
-
-
 // let num1=prompt("Enter a number");
 
 // if(num1%5==0){
@@ -172,142 +158,128 @@ console.log(`Decrement = ${num1--}`);
 //     console.log(`${num1} given number is not divisible by 5`);
 // }
 
+//for loop
+// let sum=0
+// for (let i=1; i<=5;i++){
+//     sum=sum+i;
+// }
+// console.log(sum);
 
-    //for loop 
-    // let sum=0
-    // for (let i=1; i<=5;i++){
-    //     sum=sum+i;
-    // }
-    // console.log(sum);
+// //while loop not execute if condition is false
+// let i=10;
+// while(i<=5){
+//     console.log("i=", i);
+//     i++;
+// }
 
-    // //while loop not execute if condition is false
-    // let i=10;
-    // while(i<=5){
-    //     console.log("i=", i);
-    //     i++;
-    // }
+// //do while execute atleast ones
+// let count=10;
+// do{
+//     console.log(count);
+//     count++;
+// }while(count<=5);
 
-    
+// //for-of
 
-    // //do while execute atleast ones
-    // let count=10;
-    // do{
-    //     console.log(count);
-    //     count++;
-    // }while(count<=5);
-    
+// let str="abcd";
+// for(let newStr of str){
+//     console.log(newStr);
+// }
 
-    // //for-of
+// //for-in
 
-    // let str="abcd";
-    // for(let newStr of str){
-    //     console.log(newStr);
-    // }
+// const student ={
+//     fullName:"abcd",
+//     age:18,
+// };
 
-    // //for-in 
+// for(let key in student){
+//     console.log("key = ", key ,"value=",student[key]);
+// }
 
-    // const student ={
-    //     fullName:"abcd",
-    //     age:18,
-    // };
+//print all even numbers between 1-100
 
-    // for(let key in student){
-    //     console.log("key = ", key ,"value=",student[key]);
-    // }
+// for(let i=1;i<=100;i++){
+//     if(i%2==0){
+//         console.log(i);
 
+//     }
+// }
 
+// let theNumber=251107;
+// let inputNumber=prompt("Enter a number");
 
-    //print all even numbers between 1-100
+// if(theNumber==inputNumber){
+//     console.log("Number Matched");
+// }else{
+//     console.log("Number not matched");
+// }
 
-    
-    // for(let i=1;i<=100;i++){
-    //     if(i%2==0){
-    //         console.log(i);
-           
-    //     }
-    // }
+//String
+// let str=" Java Script";
+// console.log(str);
+// console.log(str.length);
 
-    // let theNumber=251107;
-    // let inputNumber=prompt("Enter a number");
+// console.log(typeof str);
 
-    // if(theNumber==inputNumber){
-    //     console.log("Number Matched");
-    // }else{
-    //     console.log("Number not matched");
-    // }
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.trim());
+// console.log(str.charAt(1)); //0= , 1=J ....
+// console.log(str.slice(1, 5));
 
+// str1="java";
+// str2="script";
 
+// console.log(str1.concat(str2));
 
-    //String
-    // let str=" Java Script";
-    // console.log(str);
-    // console.log(str.length);
+// console.log(str2.replace("s","S"));
 
-    // console.log(typeof str);
+// let userInput = prompt("Enter your full name");
+// let trimmedName = userInput.trim();
+// let userName = `@${trimmedName}${trimmedName.length}`;
 
-    // console.log(str.toUpperCase());
-    // console.log(str.toLowerCase());
-    // console.log(str.trim());
-    // console.log(str.charAt(1)); //0= , 1=J ....
-    // console.log(str.slice(1, 5));
+// console.log(userName);
 
+//array in js
 
-    // str1="java";
-    // str2="script";
+// let marks=[23,25,67,99,100];
+// console.log(marks);
+// console.log(typeof marks);
 
-    // console.log(str1.concat(str2));
+// console.log(marks[0]);
+// console.log(marks[1]);
 
-    // console.log(str2.replace("s","S"));
+// marks[0]=99;
+// console.log(marks);
 
+//iterating over the array
 
-    // let userInput = prompt("Enter your full name");
-    // let trimmedName = userInput.trim(); 
-    // let userName = `@${trimmedName}${trimmedName.length}`;
+// for(let idx=0;idx<marks.length;idx++){
+//     console.log(marks[idx]);
+// }
 
-    // console.log(userName);
+//for of
+// let i;
+// for (i of marks){
+//     console.log(i);
 
+// }
 
-    //array in js
-
-    // let marks=[23,25,67,99,100];
-    // console.log(marks);
-    // console.log(typeof marks);
-
-    // console.log(marks[0]);
-    // console.log(marks[1]);
-
-    // marks[0]=99;
-    // console.log(marks);
-
-
-    //iterating over the array
-
-    // for(let idx=0;idx<marks.length;idx++){
-    //     console.log(marks[idx]);
-    // }
-
-    //for of
-    // let i;
-    // for (i of marks){
-    //     console.log(i);
-
-    // }
-
-    // let marks=[85,97,44,37,76,60];
-    // let sum=0;
-    // for(let i of marks){
-    //     sum=sum+i;
-    // }
-    // console.log(sum);
-    // let avg=sum/marks.length;
-    // console.log(avg);
-
+// let marks=[85,97,44,37,76,60];
+// let sum=0;
+// for(let i of marks){
+//     sum=sum+i;
+// }
+// console.log(sum);
+// let avg=sum/marks.length;
+// console.log(avg);
 
 //     let prices=[250,645,300,900,50];
 //     // let i=0
 //     // for(let val of prices){
 //     //     console.log(`Prices before applying offer of ${i} - ${val}`);
-        
+
 //     //     let offer=val/10;
 //     //     prices[i]=prices[i]-offer;
 //     //     console.log(`Prices after applying offer of ${i} - ${prices[i]}`);
@@ -317,15 +289,12 @@ console.log(`Decrement = ${num1--}`);
 // console.log(`Before offer ${prices}`);
 // let i=0
 //     for( i =0;i<prices.length;i++){
-       
-        
+
 //         let offer=prices[i]/10;
 //         prices[i]=prices[i]-offer;
 
 //     }
 //             console.log(`after offer ${prices}`);
-
-
 
 // let prices=[250,645,300,900,50];
 
@@ -350,10 +319,8 @@ console.log(`Decrement = ${num1--}`);
 // console.log(`Deleted mark is ${deletedMark}`);
 // console.log(marks);
 
-
 // console.log(marks);
 // console.log(marks.toString());
-
 
 // let class1=["abc", "xyz"];
 // let class2=["pqr", "olp"];
@@ -361,21 +328,16 @@ console.log(`Decrement = ${num1--}`);
 // class1.concat(class2);
 // console.log(class1.concat(class2));
 
-
-
 // class1.unshift("lbg", "ght"); //add to starting position
 // console.log(class1)
 // class1.shift();
 // console.log(class1);
-
 
 // console.log(class1.slice(1,2));
 
 // class1.splice(0,3,"pqe" );
 
 // console.log(class1);
-
-
 
 // let companies=["bloomberg", "microsoft", "uber", "google", "ibm", "netflix"];
 // console.log(companies);
@@ -384,15 +346,12 @@ console.log(`Decrement = ${num1--}`);
 
 // console.log(companies);
 
-
 // companies.splice(1,1,"ola");
 // console.log(companies);
 
 // companies.push("amazon");
 
 // console.log(companies);
-
-
 
 //learning Functions
 
@@ -401,7 +360,6 @@ console.log(`Decrement = ${num1--}`);
 //     console.log("Hello World");
 // }
 // myFunction();
-
 
 // //function with parameters
 // function sum(num1,num2){
@@ -413,8 +371,6 @@ console.log(`Decrement = ${num1--}`);
 // const arrowSum= (num1, num2) =>{
 //     return num1+num2;
 // }
-
-
 
 // const arrowMul=(num1, num2)=>{
 //     return num1*num2;
@@ -438,8 +394,6 @@ console.log(`Decrement = ${num1--}`);
 
 // console.log(findVowel("aeiou"));
 
-
-
 // const arrowFindVowel = (str) =>{
 //     let count = 0;
 //     for (let val of str) {
@@ -458,15 +412,10 @@ console.log(`Decrement = ${num1--}`);
 
 // console.log(arrowFindVowel("aei"));
 
-
-
-
 // let arr=[1,2,3,4,5];
 // arr.forEach((val) => {
 //     console.log(val);
 // });
-
-
 
 // let arrElement=[2,4,5,7,3];
 
@@ -477,13 +426,66 @@ console.log(`Decrement = ${num1--}`);
 
 // arrElement.forEach(calculate);
 
+// let colors=["red", "black", "white"];
+
+// let newArray=colors.map((val)=>{
+//     return colors;
+
+// });
+
+// console.log(newArray);
+
+// let numbers=[1,2,3,4,5,6,7,8,9];
+
+// let evenArray= numbers.filter((val) =>{
+//     return val%2==0;
+// });
+
+// console.log(evenArray);
+
+// let arr = [1, 2, 3, 4];
+
+// let newArray = arr.reduce((prev, curr) => {
+//   return prev > curr ? prev : curr;
+// });
+
+// console.log(newArray);
 
 
-let colors=["red", "black", "white"];
+// studMarks=[91,85,98,99,80];
 
-let newArray=colors.map((val)=>{
-    return colors;
+// let firstClassStud=studMarks.filter((val) =>{
+//     return val>90;
+// });
 
-});
+// console.log(firstClassStud);
 
-console.log(newArray);
+
+
+// let arr=[1,2,3,4,5];
+// let newArray=arr.reduce((prev, curr) =>{
+//     return prev*curr;
+// });
+// console.log(newArray);
+
+
+
+
+// let arr=[1,2,3,4,5,6,7,8];
+
+// let newArray=arr.reduce((prev,curr) =>{
+//     return prev+curr;
+// });
+
+// console.log(newArray);
+
+
+let inputNumber=prompt("Enter array size");
+
+let arr=[];
+
+for(let i=1;i<=inputNumber;i++){
+    arr[i-1]=i;
+}
+
+console.log(arr);
