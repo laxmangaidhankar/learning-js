@@ -337,40 +337,57 @@ console.log(`Decrement = ${num1--}`);
 
 //array methods
 
-let marks=[20,50,30,40];
+// let marks=[20,50,30,40];
 
-console.log(marks);
+// console.log(marks);
 
-marks.push(500);
-marks.push(800);
+// marks.push(500);
+// marks.push(800);
 
-console.log(marks);
+// console.log(marks);
 
-let deletedMark=marks.pop();
-console.log(`Deleted mark is ${deletedMark}`);
-console.log(marks);
-
-
-console.log(marks);
-console.log(marks.toString());
+// let deletedMark=marks.pop();
+// console.log(`Deleted mark is ${deletedMark}`);
+// console.log(marks);
 
 
-let class1=["abc", "xyz"];
-let class2=["pqr", "olp"];
-
-class1.concat(class2);
-console.log(class1.concat(class2));
+// console.log(marks);
+// console.log(marks.toString());
 
 
+// let class1=["abc", "xyz"];
+// let class2=["pqr", "olp"];
 
-class1.unshift("lbg", "ght"); //add to starting position
-console.log(class1)
-class1.shift();
-console.log(class1);
+// class1.concat(class2);
+// console.log(class1.concat(class2));
 
 
-console.log(class1.slice(1,2));
 
-class1.splice(0,3,"pqe" );
+// class1.unshift("lbg", "ght"); //add to starting position
+// console.log(class1)
+// class1.shift();
+// console.log(class1);
 
-console.log(class1);
+
+// console.log(class1.slice(1,2));
+
+// class1.splice(0,3,"pqe" );
+
+// console.log(class1);
+
+
+
+let companies=["bloomberg", "microsoft", "uber", "google", "ibm", "netflix"];
+console.log(companies);
+
+companies.shift();
+
+console.log(companies);
+
+
+companies.splice(1,1,"ola");
+console.log(companies);
+
+companies.push("amazon");
+
+console.log(companies);
