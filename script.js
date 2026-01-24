@@ -410,12 +410,50 @@ console.log(`Decrement = ${num1--}`);
 // }
 // sum(5,5);
 
-const arrowSum= (num1, num2) =>{
-    return num1+num2;
+// const arrowSum= (num1, num2) =>{
+//     return num1+num2;
+// }
+
+
+
+// const arrowMul=(num1, num2)=>{
+//     return num1*num2;
+// }
+
+function findVowel(str) {
+    let count = 0;
+    for (let val of str) {
+        if (
+            val === 'a' ||
+            val === 'e' ||
+            val === 'i' ||
+            val === 'o' ||
+            val === 'u'
+        ) {
+            count++;
+        }
+    }
+    return count;
 }
 
+console.log(findVowel("aeiou"));
 
 
-const arrowMul=(num1, num2)=>{
-    return num1*num2;
+
+const arrowFindVowel = (str) =>{
+    let count = 0;
+    for (let val of str) {
+        if (
+            val === 'a' ||
+            val === 'e' ||
+            val === 'i' ||
+            val === 'o' ||
+            val === 'u'
+        ) {
+            count++;
+        }
+    }
+    return count;
 }
+
+console.log(arrowFindVowel("aei"));
