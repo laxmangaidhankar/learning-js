@@ -269,7 +269,7 @@ console.log(`Decrement = ${num1--}`);
 
     //array in js
 
-    let marks=[23,25,67,99,100];
+    // let marks=[23,25,67,99,100];
     // console.log(marks);
     // console.log(typeof marks);
 
@@ -287,8 +287,40 @@ console.log(`Decrement = ${num1--}`);
     // }
 
     //for of
-    let i;
-    for (i of marks){
-        console.log(i);
+    // let i;
+    // for (i of marks){
+    //     console.log(i);
+
+    // }
+
+    // let marks=[85,97,44,37,76,60];
+    // let sum=0;
+    // for(let i of marks){
+    //     sum=sum+i;
+    // }
+    // console.log(sum);
+    // let avg=sum/marks.length;
+    // console.log(avg);
+
+
+    let prices=[250,645,300,900,50];
+    // let i=0
+    // for(let val of prices){
+    //     console.log(`Prices before applying offer of ${i} - ${val}`);
+        
+    //     let offer=val/10;
+    //     prices[i]=prices[i]-offer;
+    //     console.log(`Prices after applying offer of ${i} - ${prices[i]}`);
+    //     i++;
+
+    // }
+console.log(`Before offer ${prices}`);
+let i=0
+    for( i =0;i<prices.length;i++){
+       
+        
+        let offer=prices[i]/10;
+        prices[i]=prices[i]-offer;
 
     }
+            console.log(`after offer ${prices}`);
