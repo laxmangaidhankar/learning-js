@@ -420,40 +420,70 @@ console.log(`Decrement = ${num1--}`);
 //     return num1*num2;
 // }
 
-function findVowel(str) {
-    let count = 0;
-    for (let val of str) {
-        if (
-            val === 'a' ||
-            val === 'e' ||
-            val === 'i' ||
-            val === 'o' ||
-            val === 'u'
-        ) {
-            count++;
-        }
-    }
-    return count;
-}
+// function findVowel(str) {
+//     let count = 0;
+//     for (let val of str) {
+//         if (
+//             val === 'a' ||
+//             val === 'e' ||
+//             val === 'i' ||
+//             val === 'o' ||
+//             val === 'u'
+//         ) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
 
-console.log(findVowel("aeiou"));
+// console.log(findVowel("aeiou"));
 
 
 
-const arrowFindVowel = (str) =>{
-    let count = 0;
-    for (let val of str) {
-        if (
-            val === 'a' ||
-            val === 'e' ||
-            val === 'i' ||
-            val === 'o' ||
-            val === 'u'
-        ) {
-            count++;
-        }
-    }
-    return count;
-}
+// const arrowFindVowel = (str) =>{
+//     let count = 0;
+//     for (let val of str) {
+//         if (
+//             val === 'a' ||
+//             val === 'e' ||
+//             val === 'i' ||
+//             val === 'o' ||
+//             val === 'u'
+//         ) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
 
-console.log(arrowFindVowel("aei"));
+// console.log(arrowFindVowel("aei"));
+
+
+
+
+// let arr=[1,2,3,4,5];
+// arr.forEach((val) => {
+//     console.log(val);
+// });
+
+
+
+// let arrElement=[2,4,5,7,3];
+
+// let calculate=(val) =>{
+//     console.log(val*val);
+
+// };
+
+// arrElement.forEach(calculate);
+
+
+
+let colors=["red", "black", "white"];
+
+let newArray=colors.map((val)=>{
+    return colors;
+
+});
+
+console.log(newArray);
