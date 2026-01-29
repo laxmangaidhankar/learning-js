@@ -480,12 +480,91 @@ console.log(`Decrement = ${num1--}`);
 // console.log(newArray);
 
 
-let inputNumber=prompt("Enter array size");
+// let inputNumber=prompt("Enter array size");
 
-let arr=[];
+// let arr=[];
 
-for(let i=1;i<=inputNumber;i++){
-    arr[i-1]=i;
-}
+// for(let i=1;i<=inputNumber;i++){
+//     arr[i-1]=i;
+// }
 
-console.log(arr);
+// console.log(arr);
+
+// console.log(window);
+
+// window.console.log("Hello World");
+
+// console.dir(document);
+
+// let val = document.getElementById("heading");
+
+// console.dir(val);
+
+
+// console.dir(document.getElementsByClassName("firstClass"));
+
+
+// console.dir(document.getElementsByTagName("p"));
+
+
+// console.dir(document.querySelectorAll("p"));
+// console.dir(document.querySelectorAll(".myClass"));
+
+// console.dir(document.querySelector(".myClass"));
+
+
+// console.log(document.querySelector("#myId"));
+
+
+// console.dir(document.head.firstChild);
+
+// console.log(document.body.firstChild);
+
+
+
+// let div=document.querySelectorAll("div");
+
+// console.dir(div)
+
+
+
+
+
+// console.log(div.innerText);
+
+
+
+
+
+const student = {
+    fullName:"Laxman Gaidhankar",
+    rollNo:22501,
+    marks:93,
+    
+    printMarks: function(){
+        console.log("Marks = ", this.marks);
+    }, 
+};
+
+
+
+const employee={
+    employeeDetails(){
+        console.log("hello employee");
+    },
+};
+
+
+const myData= {
+    myId:101,
+};
+const myData2= {
+    myId:101,
+};
+const myData3= {
+    myId:101,
+};
+
+myData.__proto__=employee;  
+myData2.__proto__=employee;
+myData3.__proto__=employee;
