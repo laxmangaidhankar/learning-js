@@ -598,6 +598,11 @@ console.log(`Decrement = ${num1--}`);
 
 
 class Car{
+
+    constructor(str){
+        console.log("This is constuctor");
+        console.log(str);
+    }
     num=10;
     start(){
         console.log("In Start Function");
@@ -605,9 +610,10 @@ class Car{
     stop(){
         console.log("In Stop Function");
     }
+    
 }
 
-let c=new Car();
+let c=new Car("Hello");
 
 c.start();
 c.stop();
