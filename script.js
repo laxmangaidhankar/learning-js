@@ -536,35 +536,61 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-const student = {
-    fullName:"Laxman Gaidhankar",
-    rollNo:22501,
-    marks:93,
+// const student = {
+//     fullName:"abc ",
+//     rollNo:141,
+//     marks:93,
     
-    printMarks: function(){
-        console.log("Marks = ", this.marks);
-    }, 
-};
+//     printMarks: function(){
+//         console.log("Marks = ", this.marks);
+//     }, 
+// };
 
 
 
-const employee={
-    employeeDetails(){
-        console.log("hello employee");
+// const employee={
+//     employeeDetails(){
+//         console.log("hello employee");
+//     },
+// };
+
+
+// const myData= {
+//     myId:101,
+// };
+// const myData2= {
+//     myId:101,
+// };
+// const myData3= {
+//     myId:101,
+// };
+
+// myData.__proto__=employee;  
+// myData2.__proto__=employee;
+// myData3.__proto__=employee;
+
+
+
+
+const student = {
+    fullName:"abc",
+    marks:20,
+
+    myMarks:function(){
+        console.log("My Marks function");
+    },
+    myFunc(){
+        console.log("My function");
     },
 };
 
 
-const myData= {
-    myId:101,
-};
-const myData2= {
-    myId:101,
-};
-const myData3= {
-    myId:101,
+const teacher={
+    fullName:"xyz",
+    regId:2010,
+    myFunc(){
+        console.log("My function in teacher");
+    },
 };
 
-myData.__proto__=employee;  
-myData2.__proto__=employee;
-myData3.__proto__=employee;
+teacher.__proto__ = student;
