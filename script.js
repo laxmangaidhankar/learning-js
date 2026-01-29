@@ -572,25 +572,43 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-const student = {
-    fullName:"abc",
-    marks:20,
+// const student = {
+//     fullName:"abc",
+//     marks:20,
 
-    myMarks:function(){
-        console.log("My Marks function");
-    },
-    myFunc(){
-        console.log("My function");
-    },
-};
+//     myMarks:function(){
+//         console.log("My Marks function");
+//     },
+//     myFunc(){
+//         console.log("My function");
+//     },
+// };
 
 
-const teacher={
-    fullName:"xyz",
-    regId:2010,
-    myFunc(){
-        console.log("My function in teacher");
-    },
-};
+// const teacher={
+//     fullName:"xyz",
+//     regId:2010,
+//     myFunc(){
+//         console.log("My function in teacher");
+//     },
+// };
 
-teacher.__proto__ = student;
+// teacher.__proto__ = student;
+
+
+
+class Car{
+    num=10;
+    start(){
+        console.log("In Start Function");
+    }
+    stop(){
+        console.log("In Stop Function");
+    }
+}
+
+let c=new Car();
+
+c.start();
+c.stop();
+console.log(c.num);
