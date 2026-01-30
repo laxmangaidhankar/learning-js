@@ -656,28 +656,64 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-class Person{
-    constructor(name){
-        console.log("Name = ", name);
+// class Person{
+//     constructor(name){
+//         console.log("Name = ", name);
+//     }
+//     personInfo(){
+//         console.log("this is personinfo function in person class");
+//     }
+// }
+
+// class Engineer extends Person{
+//     constructor(name){
+//         super(name);
+//         this.name=name;
+//         console.log("Name = ", this.name);
+//     }
+//     personInfo(){
+//         super.personInfo();
+//         console.log("this is personinfo function in engineer class")
+//     }
+// }
+
+// let e=new Engineer("abc");
+// e.personInfo();
+
+
+
+
+class User{
+    
+    constructor(name, email){
+    this.name = name;
+    this.email = email;
     }
-    personInfo(){
-        console.log("this is personinfo function in person class");
+
+    viewData(){
+       
+        console.log("Name= ", this.name);
+        console.log("email = ",this.email);
     }
 }
 
-class Engineer extends Person{
-    constructor(name){
-        super(name);
-        this.name=name;
-        console.log("Name = ", this.name);
+class Admin extends User{
+    constructor(name, email){
+        super(name,email);
+        
     }
-    personInfo(){
-        super.personInfo();
-        console.log("this is personinfo function in engineer class")
+    editData(){
+        
+        console.log("Edit name=", this.name);
+        console.log("Edit email=", this.email);
     }
 }
 
-let e=new Engineer("abc");
-e.personInfo();
+let u=new User();
+u.email="xyz@gmail.com";
+u.name="xyz";
+u.viewData();
 
+let a1=new Admin("abc","abc@gmail.com");
 
+a1.editData();
