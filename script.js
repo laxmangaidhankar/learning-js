@@ -597,24 +597,86 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-class Car{
+// class Car{
 
-    constructor(str){
-        console.log("This is constuctor");
-        console.log(str);
-    }
-    num=10;
-    start(){
-        console.log("In Start Function");
-    }
-    stop(){
-        console.log("In Stop Function");
-    }
+//     constructor(str){
+//         console.log("This is constuctor");
+//         console.log(str);
+//     }
+//     num=10;
+//     start(){
+//         console.log("In Start Function");
+//     }
+//     stop(){
+//         console.log("In Stop Function");
+//     }
     
+// }
+// class Mycar extends Car{
+//     start(){
+//         console.log("Inherited class");
+//     }
+
+// }
+// let c=new Car("Hello");
+// let m=new Mycar();
+// c.start();
+// c.stop();
+
+// m.start();
+
+
+// class Student{
+//     rollNo=123;
+//     marks=55;
+    
+//     constructor(rollNo, marks){
+        
+//         this.rollNo=45;
+//         this.marks=100;
+//         console.log("in constuctor",this.rollNo, this.marks);
+//     }
+
+//     studFunc(rollNo, marks){
+//         console.log("roll no", rollNo);
+//         console.log("marks ", marks);
+//     }
+// }
+
+// class Base extends Student{
+//     start(){
+//         console.log("hell");
+//     }
+
+// }
+
+// let s=new Student();
+// s.studFunc(s.rollNo, s.marks);
+
+
+
+
+class Person{
+    constructor(name){
+        console.log("Name = ", name);
+    }
+    personInfo(){
+        console.log("this is personinfo function in person class");
+    }
 }
 
-let c=new Car("Hello");
+class Engineer extends Person{
+    constructor(name){
+        super(name);
+        this.name=name;
+        console.log("Name = ", this.name);
+    }
+    personInfo(){
+        console.log("this is personinfo function in engineer class")
+    }
+}
 
-c.start();
-c.stop();
-console.log(c.num);
+let e=new Engineer("abc");
+e.personInfo();
+
+
