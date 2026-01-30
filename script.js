@@ -683,37 +683,57 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-class User{
+// class User{
     
-    constructor(name, email){
-    this.name = name;
-    this.email = email;
-    }
+//     constructor(name, email){
+//     this.name = name;
+//     this.email = email;
+//     }
 
-    viewData(){
+//     viewData(){
        
-        console.log("Name= ", this.name);
-        console.log("email = ",this.email);
-    }
-}
+//         console.log("Name= ", this.name);
+//         console.log("email = ",this.email);
+//     }
+// }
 
-class Admin extends User{
-    constructor(name, email){
-        super(name,email);
+// class Admin extends User{
+//     constructor(name, email){
+//         super(name,email);
         
-    }
-    editData(){
+//     }
+//     editData(){
         
-        console.log("Edit name=", this.name);
-        console.log("Edit email=", this.email);
-    }
+//         console.log("Edit name=", this.name);
+//         console.log("Edit email=", this.email);
+//     }
+// }
+
+// let u=new User();
+// u.email="xyz@gmail.com";
+// u.name="xyz";
+// u.viewData();
+
+// let a1=new Admin("abc","abc@gmail.com");
+
+// a1.editData();
+
+
+
+let num1=10;
+let num2=20;
+
+
+console.log("num1 + num2 = ", num1+num2);
+console.log("num1 + num2 = ", num1+num2);
+console.log("num1 + num2 = ", num1+num2);
+//console.log("num1 + num2 = ", num1+num3);
+try {
+    console.log("num1 + num3 = ", num1+num3);
+
+}catch(err){
+    console.log(err);
 }
-
-let u=new User();
-u.email="xyz@gmail.com";
-u.name="xyz";
-u.viewData();
-
-let a1=new Admin("abc","abc@gmail.com");
-
-a1.editData();
+console.log("num1 + num2 = ", num1+num2);
+console.log("num1 + num2 = ", num1+num2);
+console.log("num1 + num2 = ", num1+num2);
