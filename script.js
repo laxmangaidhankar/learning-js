@@ -672,6 +672,7 @@ class Engineer extends Person{
         console.log("Name = ", this.name);
     }
     personInfo(){
+        super.personInfo();
         console.log("this is personinfo function in engineer class")
     }
 }
