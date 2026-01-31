@@ -760,31 +760,31 @@ console.log(`Decrement = ${num1--}`);
 // setTimeout(myFunc,5000);
 
 
-function getData(dataId) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("data", dataId);
-      resolve("success");
-    }, 4000);
-  });
-}
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataId);
+//       resolve("success");
+//     }, 4000);
+//   });
+// }
 
-console.log("data 1 processing");
-getData(1)
-  .then((res) => {
-    console.log("data 2 processing");
+// console.log("data 1 processing");
+// getData(1)
+//   .then((res) => {
+//     console.log("data 2 processing");
 
-    return getData(2);
-  })
-  .then((res) => {
-    console.log("data 3 processing");
+//     return getData(2);
+//   })
+//   .then((res) => {
+//     console.log("data 3 processing");
 
-    return getData(3);
-  })
-  .then((res) => {
-    console.log(res);
-  }
-);
+//     return getData(3);
+//   })
+//   .then((res) => {
+//     console.log(res);
+//   }
+// );
    
     
 
@@ -905,3 +905,67 @@ getData(1)
 // // const myFunc=()=>{
 
 // // }
+
+
+
+// function api(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             console.log("weather data");
+//             resolve("success");
+//         },2000);
+//     });
+// }
+
+
+// async function myFunc(){
+//     await api();
+//     await api();
+//     await api();
+//     await api();
+
+// }
+
+
+
+
+
+// async function myFunc(){
+//     console.log("this is function");
+// }
+
+
+ function getData(dataId) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data", dataId);
+      resolve("success");
+    }, 4000);
+  });
+}
+
+
+// async function myFunc(){
+//     console.log("getting data 1");
+//     await getData(1);
+//     console.log("getting data 2");
+
+//     await getData(2);
+//     console.log("getting data 3");
+
+//     await getData(3);
+   
+// }
+
+(async function myFunc(){
+    console.log("getting data 1");
+    await getData(1);
+    console.log("getting data 2");
+
+    await getData(2);
+    console.log("getting data 3");
+
+    await getData(3);
+   
+})();
+
