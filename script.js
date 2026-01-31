@@ -720,20 +720,69 @@ console.log(`Decrement = ${num1--}`);
 
 
 
-let num1=10;
-let num2=20;
+// let num1=10;
+// let num2=20;
 
 
-console.log("num1 + num2 = ", num1+num2);
-console.log("num1 + num2 = ", num1+num2);
-console.log("num1 + num2 = ", num1+num2);
-//console.log("num1 + num2 = ", num1+num3);
-try {
-    console.log("num1 + num3 = ", num1+num3);
+// console.log("num1 + num2 = ", num1+num2);
+// console.log("num1 + num2 = ", num1+num2);
+// console.log("num1 + num2 = ", num1+num2);
+// //console.log("num1 + num2 = ", num1+num3);
+// try {
+//     console.log("num1 + num3 = ", num1+num3);
 
-}catch(err){
-    console.log(err);
-}
-console.log("num1 + num2 = ", num1+num2);
-console.log("num1 + num2 = ", num1+num2);
-console.log("num1 + num2 = ", num1+num2);
+// }catch(err){
+//     console.log(err);
+// }
+// console.log("num1 + num2 = ", num1+num2);
+// console.log("num1 + num2 = ", num1+num2);
+// console.log("num1 + num2 = ", num1+num2);
+
+
+// console.log("1st statment");
+// console.log("2nd statment");
+// console.log("3rt statment");
+
+// setTimeout(()=>{
+//     console.log("4th statement");
+// },2000);
+
+// console.log("5th Statment ");
+// console.log("6th Statment ");
+// console.log("7th Statment ");
+
+
+// myFunc=()=>{
+//     console.log("Hello World");
+   
+// }
+
+// setTimeout(myFunc,5000);
+
+
+function getData(dataId,getNextData){
+    
+    setTimeout(()=>{
+    
+    console.log("data", dataId);
+    if(getNextData){
+        getNextData();
+    }
+    },2000);
+};
+console.log("getting data...");
+getData(1,()=>{
+    console.log("getting next data....");
+    getData(2,()=>{
+        console.log("getting next data....");
+            getData(3,()=>{
+                console.log("getting next data....");
+                getData(4,()=>{
+
+            });
+        });
+    });
+});
+
+
+
