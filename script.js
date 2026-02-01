@@ -935,14 +935,14 @@ console.log(`Decrement = ${num1--}`);
 // }
 
 
- function getData(dataId) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("data", dataId);
-      resolve("success");
-    }, 4000);
-  });
-}
+//  function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataId);
+//       resolve("success");
+//     }, 4000);
+//   });
+// }
 
 
 // async function myFunc(){
@@ -957,15 +957,57 @@ console.log(`Decrement = ${num1--}`);
    
 // }
 
-(async function myFunc(){
-    console.log("getting data 1");
-    await getData(1);
-    console.log("getting data 2");
+// (async function myFunc(){
+//     console.log("getting data 1");
+//     await getData(1);
+//     console.log("getting data 2");
 
-    await getData(2);
-    console.log("getting data 3");
+//     await getData(2);
+//     console.log("getting data 3");
 
-    await getData(3);
+//     await getData(3);
    
-})();
+// })();
+
+
+
+const URL = "https://dog.ceo/api/breeds/list/all";
+const btn=document.querySelector("#btn");
+
+// async function myFunc(){
+
+// let response = await fetch(URL);
+// console.log(response);
+
+// let data= await response.json();
+// console.log(data.message);
+// let fact=document.querySelector(".fact");
+// fact.innerText=data.message.hound;
+// }
+
+// btn.addEventListener("click", myFunc);
+
+
+
+// function myFunc(){
+//   fetch(URL).then((response) =>{
+//     return response.json();
+//   }).then((data)=>{
+//     console.log(data);
+//     let fact=document.querySelector(".fact");
+//     fact.innerText=data.message.hound;
+//   });
+// }
+
+
+
+async function myFunc(){
+  let response=await fetch(URL);
+  console.log(response);
+  let data=await response.json();
+  console.log(data.message);
+  let fact=document.querySelector(".fact");
+  //fact.innerText=data.message.hound;
+}
+btn.addEventListener("click", myFunc);
 
